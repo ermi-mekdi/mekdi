@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactief CV | Haile Mardelawit</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f4f7f6;
+        color: #333;
+      }
+      .hero {
+        background: #0056b3;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+      }
+      .profile-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 4px solid white;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: #e7f1ff;
+        color: #0056b3;
+      }
+      .accordion-button:focus {
+        border-color: #86b7fe;
+        box-shadow: none;
+      }
+      .card-header-title {
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+      .contact-info {
+        font-size: 0.9rem;
+        margin-top: 10px;
+      }
+      footer {
+        font-size: 0.85rem;
+        color: #666;
+        padding: 30px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero shadow-sm">
+      <div class="container">
+        <img src="profielfoto.jpg" alt="Haile Mardelawit" class="profile-img" />
+        <h1 class="h3">Mardelawit Haile</h1>
+        <p class="mb-0">Dienstverlenende Professional</p>
+        <div class="contact-info">
+          📍 Den Haag | 📞 0634229223 | ✉️ mekdiha31@gmail.com |
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-5" style="max-width: 800px">
+      <h4 class="mb-4 text-primary">Werkervaring (klik voor details)</h4>
+
+      <div class="accordion shadow-sm" id="cvAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#work1"
+            >
+              <div class="w-100">
+                <span class="card-header-title">Florein</span><br />
+                <small class="text-muted"
+                  >2018 – Heden | Huishoudelijk Medewerker</small
+                >
+              </div>
+            </button>
+          </h2>
+          <div
+            id="work1"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#cvAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  Zelfstandig uitvoeren van huishoudelijke taken bij cliënten
+                  thuis.
+                </li>
+                <li>
+                  Signaleren van zorgbehoeften en het onderhouden van sociaal
+                  contact.
+                </li>
+                <li>
+                  Verantwoordelijk voor planning en kwaliteit van de
+                  dienstverlening.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#work2"
+            >
+              <div class="w-100">
+                <span class="card-header-title">BTO</span><br />
+                <small class="text-muted"
+                  >2016 – 2018 | Huishoudelijk Medewerker</small
+                >
+              </div>
+            </button>
+          </h2>
+          <div
+            id="work2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#cvAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>Ondersteunen van diverse huishoudens in regio Den Haag.</li>
+                <li>
+                  Efficiënt werken volgens hygiënevoorschriften en klantwensen.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#work3"
+            >
+              <div class="w-100">
+                <span class="card-header-title">Gallus Thuiszorg</span><br />
+                <small class="text-muted"
+                  >2013 – 2015 | Huishoudelijk Medewerker</small
+                >
+              </div>
+            </button>
+          </h2>
+          <div
+            id="work3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#cvAccordion"
+          >
+            <div class="accordion-body">
+              <ul>
+                <li>
+                  Schoonmaken van woonruimtes bij ouderen en hulpbehoevenden.
+                </li>
+                <li>
+                  Zorgvuldig omgaan met persoonlijke eigendommen en privacy van
+                  de cliënt.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="mt-5 mb-4 text-primary">Opleiding & Talen</h4>
+      <div class="card p-3 shadow-sm border-0">
+        <p><strong>Inburgeringscursus</strong>, Den Haag (2010 – 2011)</p>
+        <p><strong>Marketing Management</strong>, Addis Abeba (2000 – 2002)</p>
+        <hr />
+        <p class="mb-0">
+          <strong>Talen:</strong> Nederlands (Goed), Amhaars (Moedertaal),
+          Tigrinya (Uitstekend), Engels (Goed)
+        </p>
+      </div>
+    </main>
+
+    <footer class="text-center">
+      <p>&copy; 2026 Mardelawit Haile - Den Haag</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
